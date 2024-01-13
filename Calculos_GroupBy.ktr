@@ -428,7 +428,7 @@
     <created_user>-</created_user>
     <created_date>2023/07/04 08:05:21.038</created_date>
     <modified_user>-</modified_user>
-    <modified_date>2023/07/10 19:16:03.014</modified_date>
+    <modified_date>2024/01/12 19:36:02.883</modified_date>
     <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
@@ -686,7 +686,7 @@
     <accept_field/>
     <accept_stepname/>
     <file>
-      <name>C:/Users/borge/OneDrive/Documentos/Repos/Curso_Pentaho/PentahoDataIntegration-main/listacompras.xls</name>
+      <name>/home/borges/Documentos/repos/Pentaho/Arquivos_Estudo_Pentaho/Filtrando_pesquisando_operações_uteis/listacompras.xls</name>
       <filemask/>
       <exclude_filemask/>
       <file_required>N</file_required>
