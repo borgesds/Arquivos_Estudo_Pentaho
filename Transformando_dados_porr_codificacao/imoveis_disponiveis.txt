@@ -1,0 +1,39 @@
+Codigo da Propriedade: ALF-001
+Status: Ativo
+5 quartos
+5 banheiros
+Estilo: Contemporâneo
+Porão
+Lavanderia
+Lareira
+Garagem para 2 carros
+Ar condicionado central
+Mais recursos: sótão, secadora de roupas, lavadora de roupas, lava-louças
+Codigo da Propriedade: ALF-002
+Status: Ativo
+4 quartos
+3 banheiros
+Estilo: Moderno
+Estacionamento anexo
+Mais recursos: Sistema de alarme, cozinha americana, lavabo
+Codigo da Propriedade: ALF-003
+Status: Ativo
+3 quartos
+2 banheiros
+Estilo: Antigo
+Sem garagem
+Mais recursos: Sistema de alarme
+Codigo da Propriedade: ALF-004
+Status: Ativo
+3 quartos
+2 baheiros
+Estilo: Moderno
+Garagem para 4 carros
+Mais recursos: Sistema de alarme, cozinha americana
+Codigo da Propriedade: ALF-005
+Status: Ativo
+7 quartos
+5 banheiros
+Estilo: Colonial
+Garagem para 4 carros
+Mais recursos: Sistema de alarme, cozinha americana
