@@ -1,6 +1,6 @@
 <transformation>
   <info>
-    <name>codificacao_em_javascript</name>
+    <name>codificacao_em_java</name>
     <description/>
     <extended_description/>
     <trans_version/>
@@ -428,7 +428,7 @@
     <created_user>-</created_user>
     <created_date>2024/01/19 06:14:51.224</created_date>
     <modified_user>-</modified_user>
-    <modified_date>2024/01/21 17:11:15.119</modified_date>
+    <modified_date>2024/01/21 17:14:37.392</modified_date>
     <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
@@ -442,11 +442,11 @@
     </hop>
     <hop>
       <from>Split field to rows</from>
-      <to>Modified JavaScript value</to>
+      <to>User defined Java class</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Modified JavaScript value</from>
+      <from>User defined Java class</from>
       <to>Dummy (do nothing)</to>
       <enabled>Y</enabled>
     </hop>
@@ -472,78 +472,6 @@
     </remotesteps>
     <GUI>
       <xloc>800</xloc>
-      <yloc>112</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Modified JavaScript value</name>
-    <type>ScriptValueMod</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <compatible>N</compatible>
-    <optimizationLevel>9</optimizationLevel>
-    <jsScripts>
-      <jsScript>
-        <jsScript_type>0</jsScript_type>
-        <jsScript_name>Script 1</jsScript_name>
-        <jsScript_script>//Script here
-
-var palavra_comprimento = palavra.length;
-var palavra_maiuscula = upper(palavra);
-var data = new Date()
-
-if(palavra_comprimento > 3){
-	trans_Status = CONTINUE_TRANSFORMATION
-}else{
-	writeToLog(palavra)
-	trans_Status = SKIP_TRANSFORMATION
-};
-</jsScript_script>
-      </jsScript>
-    </jsScripts>
-    <fields>
-      <field>
-        <name>palavra_comprimento</name>
-        <rename>palavra_comprimento</rename>
-        <type>Integer</type>
-        <length>9</length>
-        <precision>0</precision>
-        <replace>N</replace>
-      </field>
-      <field>
-        <name>palavra_maiuscula</name>
-        <rename>palavra</rename>
-        <type>String</type>
-        <length>-1</length>
-        <precision>-1</precision>
-        <replace>N</replace>
-      </field>
-      <field>
-        <name>data</name>
-        <rename>data</rename>
-        <type>Date</type>
-        <length>-1</length>
-        <precision>-1</precision>
-        <replace>N</replace>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>608</xloc>
       <yloc>112</yloc>
       <draw>Y</draw>
     </GUI>
@@ -681,6 +609,44 @@ if(palavra_comprimento > 3){
     </remotesteps>
     <GUI>
       <xloc>192</xloc>
+      <yloc>112</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>User defined Java class</name>
+    <type>UserDefinedJavaClass</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <definitions>
+      <definition>
+        <class_type>TRANSFORM_CLASS</class_type>
+        <class_name>Processor</class_name>
+        <class_source/>
+      </definition>
+    </definitions>
+    <fields>
+    </fields>
+    <clear_result_fields>N</clear_result_fields>
+    <info_steps/>
+    <target_steps/>
+    <usage_parameters/>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>576</xloc>
       <yloc>112</yloc>
       <draw>Y</draw>
     </GUI>
